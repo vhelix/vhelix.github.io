@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&family=Sofia+Sans:ital,wght@0,1;0,100;0,200;0,400;0,500;0,600;0,800;1,1;1,100;1,200;1,400;1,500;1,600;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Sofia Sans', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./Imágenes/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+#ubicado {
+    background-color: #efeae4;
+    color: #3a3a3a;
+}
+
+#servicios {
+    background-color: #f4f4f4;
+    color: #3a3a3a;
+}
+
+#habitaciones{
+    background-color: #5C5C5C;
+    color: #fff;
+}
+
+#otros_servicios {
+    background-color: #f4f4f4;
+    color: #3a3a3a;
+}
+
+#pie {
+    background-color: #fff;
+    color: #3a3a3a;
+}
+
+.ajustar_ancho{
+    width:100%;
+    height: auto;
+}
+
+.ajustar_iconos{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+
+.banner_contenedor{
+    display:flex; 
+    height: 720px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center; 
+    gap: 2.5em;  
+}
+
+.banner__boton--estilo {
+    background-color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.espacio {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contenedor {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor_habitaciones {
+    max-width: 90%;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido_header{
+    font-size: 15px;
+    font-family:'Roboto Slab', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: -15px;
+    margin-right: -15px;
+
+}
+
+.columna {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contenedor_footer{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #5C5C5C;
+    padding: 30px;
+    max-width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    flex: 1 0 33%;
+    margin-bottom: 20px;
+}
+
+.footer-links h5 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    display: block;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.footer-links ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffffff;
+    margin-left: auto;
+}
+
+.derechos {
+    color: #ffffff;
+    font-size: 10px;
+    margin-left: 0;
+    text-align: left;
+}
+
+
