@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&family=Sofia+Sans:ital,wght@0,1;0,100;0,200;0,400;0,500;0,600;0,800;1,1;1,100;1,200;1,400;1,500;1,600;1,800&display=swap');
 
+:root {
+    /*paleta de colores*/
+    --color1:#efeae4;
+    --color2: #f4f4f4;
+    --color3:#3a3a3a;
+    --color4:#5C5C5C;
+    --color5:#ffffff;
+    --color6:#bbbbbb;
+
+    --fuentePrincipal:'Sofia Sans', sans-serif;
+    --fuenteSecundaria:'Roboto Slab', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -64,9 +77,14 @@ ul{
     color: #3a3a3a;
 }
 
-#servicios {
+#servicios servicios-2 {
     background-color: #f4f4f4;
     color: #3a3a3a;
+}
+
+#servicios-2 img {
+    max-width: 60%;
+    height: auto;
 }
 
 #habitaciones{
@@ -141,7 +159,6 @@ ul{
 .fila {
     display: flex;
     flex-direction: row;
-
     margin-left: -15px;
     margin-right: -15px;
 
@@ -152,6 +169,10 @@ ul{
     flex-grow: 1;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.columna h4 {
+    font-family: 'Roboto Slab', sans-serif;;
 }
 
 .contenedor_footer{
