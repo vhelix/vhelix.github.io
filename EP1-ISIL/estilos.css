@@ -235,4 +235,12 @@ ul{
     color: var(--grisclaro_texto);
 }
 
+.txt-shdw-glow {
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.box-shdw-glow {
+    box-shadow: 0px 0px 56px 0px rgba(209,177,101,0.75);
+}
+
 
