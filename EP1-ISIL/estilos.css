@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&family=Sofia+Sans:ital,wght@0,1;0,100;0,200;0,400;0,500;0,600;0,800;1,1;1,100;1,200;1,400;1,500;1,600;1,800&display=swap');
 
 :root {
-    /*paleta de colores*/
-    --color1:#efeae4;
-    --color2: #f4f4f4;
-    --color3:#3a3a3a;
-    --color4:#5C5C5C;
-    --color5:#ffffff;
-    --color6:#bbbbbb;
+    /*variables para paleta de colores*/
+    --beige_fondo: #efeae4;
+    --grisoscuro_texto: #3a3a3a;
+    --blanco: #f4f4f4;
+    --grisclaro_fondo:#5C5C5C;
+    --grisclaro_texto:#bbbbbb;
 
+    /* variables para fuentes*/
     --fuentePrincipal:'Sofia Sans', sans-serif;
     --fuenteSecundaria:'Roboto Slab', sans-serif;
 }
@@ -20,17 +20,17 @@
 
 body {
     font-size: 15px;
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: var(--fuentePrincipal);
 }
 
 h1 {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: var(--fuentePrincipal);
     text-align: center;
     font-size: 35px;
 }
 
 h2 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: var(--fuenteSecundaria);
     text-align: center;
     font-weight: 800;
     font-size: 25px;
@@ -40,14 +40,14 @@ h2 {
 }
 
 h3 {
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: var(--fuentePrincipal);
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
 }
 
 h4{
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-size: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -67,19 +67,19 @@ ul{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    color: white;
+    color: var(--blanco);
     padding: 50px;
     text-align: center;
 }
 
 #ubicado {
-    background-color: #efeae4;
-    color: #3a3a3a;
+    background-color: var(--beige_fondo);
+    color: var(--grisoscuro_texto);
 }
 
 #servicios servicios-2 {
-    background-color: #f4f4f4;
-    color: #3a3a3a;
+    background-color: var(--blanco);
+    color: var(--grisoscuro_texto);
 }
 
 #servicios-2 img {
@@ -88,18 +88,18 @@ ul{
 }
 
 #habitaciones{
-    background-color: #5C5C5C;
-    color: #fff;
+    background-color: var(--grisclaro_fondo);
+    color: var(--blanco);
 }
 
 #otros_servicios {
-    background-color: #f4f4f4;
-    color: #3a3a3a;
+    background-color: var(--blanco);
+    color: var(--grisoscuro_texto);
 }
 
 #pie {
-    background-color: #fff;
-    color: #3a3a3a;
+    background-color: var(--blanco);
+    color: var(--grisoscuro_texto);
 }
 
 .ajustar_ancho{
@@ -124,8 +124,8 @@ ul{
 }
 
 .banner__boton--estilo {
-    background-color: white;
-    font-family: 'Sofia Sans', sans-serif;
+    background-color: var(--blanco);
+    font-family: var(--fuentePrincipal);
     font-size: 20px;
     padding: 20px;
 }
@@ -150,7 +150,7 @@ ul{
 
 .contenido_header{
     font-size: 15px;
-    font-family:'Roboto Slab', sans-serif;
+    font-family: var(--fuenteSecundaria);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -172,7 +172,7 @@ ul{
 }
 
 .columna h4 {
-    font-family: 'Roboto Slab', sans-serif;;
+    font-family: var(--fuenteSecundaria);
 }
 
 .contenedor_footer{
@@ -181,7 +181,7 @@ ul{
 }
 
 .footer {
-    background-color: #5C5C5C;
+    background-color: var(--grisclaro_fondo);
     padding: 30px;
     max-width: 100%;
     text-align: center;
@@ -200,7 +200,7 @@ ul{
 
 .footer-links h5 {
     font-size: 20px;
-    color: #ffffff;
+    color: var(--blanco);
     font-weight: 500;
     display: block;
     margin: auto;
@@ -210,22 +210,37 @@ ul{
 .footer-links ul li a {
     font-size: 15px;
     text-decoration: none;
-    color: #bbbbbb;
+    color: var(--grisclaro_texto);
     display: block;
     margin-bottom: 15px;
     transition: all .3s ease;
 }
 
 .footer-links ul li a:hover {
-    color: #ffffff;
+    color: var(--blanco);
     margin-left: auto;
 }
 
 .derechos {
-    color: #ffffff;
-    font-size: 10px;
+    color: var(--blanco);
+    font-size: 15px;
     margin-left: 0;
     text-align: left;
+}
+
+.footer-links i {
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 40px;
+    color: var(--grisclaro_texto);
+}
+
+.txt-shdw-glow {
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.box-shdw-glow {
+    box-shadow: 0px 0px 56px 0px rgba(209,177,101,0.75);
 }
 
 
